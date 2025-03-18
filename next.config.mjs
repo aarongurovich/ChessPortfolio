@@ -1,8 +1,8 @@
 let userConfig = undefined
 try {
-  userConfig = await import('./v0-user-next.config')
+  userConfig = await import('./v0-user-next.config') // Load user-specific config if available
 } catch (e) {
-  // ignore error
+  // Ignore error if file does not exist
 }
 
 /** @type {import('next').NextConfig} */
@@ -21,8 +21,10 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  output: "export", // ✅ This ensures static export
 }
 
+// ✅ Move mergeConfig execution AFTER function declaration
 mergeConfig(nextConfig, userConfig)
 
 function mergeConfig(nextConfig, userConfig) {
