@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudflare/next-on-pages": "^1.13.10",
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-alert-dialog": "^1.1.4",
@@ -38,6 +39,7 @@
     "@radix-ui/react-toggle-group": "^1.1.1",
     "@radix-ui/react-tooltip": "latest",
     "autoprefixer": "^10.4.20",
+    "chess.js": "latest",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
@@ -48,6 +50,7 @@
     "next": "15.1.0",
     "next-themes": "latest",
     "react": "^19",
+    "react-chessboard": "latest",
     "react-day-picker": "8.10.1",
     "react-dom": "^19",
     "react-hook-form": "^7.54.1",
@@ -57,9 +60,7 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.6",
-    "zod": "^3.24.1",
-    "react-chessboard": "latest",
-    "chess.js": "latest"
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/node": "^22",
